@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDADES DYLAN RODRIGUEZ</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;  
+            box-sizing: border-box; 
+            font-family: 'Roboto', sans-serif;
+            background-color: #0e0724;
+        }
+        .contenedor_padre{
+            height: 100vh;
+            display: flex;
+            padding: 1em;
+            flex-flow: row wrap;
+            gap: 1em;
+        }
+        .card {
+            width: 320px;
+            height: min-content;
+            border-radius: 20px;
+            padding: 5px;
+            box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+            background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+            }
+            .card__content {
+                padding: 1em;
+                color: white;
+                background: rgb(5, 6, 45);
+                border-radius: 17px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                align-items: center;
+                min-height: 350px;  
+            }
+            button {
+                --border-radius: 15px;
+                --border-width: 4px;
+                appearance: none;
+                position: relative;
+                padding: 0.5em 2em;
+                border: 0;
+                background-color: #212121;
+                font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                color: #fff;
+                z-index: 2;
+                }
+                button::after {
+                --m-i: linear-gradient(#000, #000);
+                --m-o: content-box, padding-box;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding: var(--border-width);
+                border-radius: var(--border-radius);
+                background-image: conic-gradient(
+                        #488cfb,
+                        #29dbbc,
+                        #b2c223,
+                        #ff9f0e,
+                        #e440bb,
+                        #655adc,
+                        #488cfb
+                    );
+                -webkit-mask-image: var(--m-i), var(--m-i);
+                mask-image: var(--m-i), var(--m-i);
+                -webkit-mask-origin: var(--m-o);
+                mask-origin: var(--m-o);
+                -webkit-mask-clip: var(--m-o);
+                mask-composite: exclude;
+                -webkit-mask-composite: destination-out;
+                filter: hue-rotate(0);
+                animation: rotate-hue linear 500ms infinite;
+                animation-play-state: paused;
+                }
+                button:hover::after {
+                animation-play-state: running;
+                }
+                @keyframes rotate-hue {
+                to {
+                filter: hue-rotate(1turn);
+                }
+                }
+                button,
+                button::after {
+                box-sizing: border-box;
+                }
+                button:active {
+                --border-width: 5px;
+                }
+    </style>
+</head>
+<body>
+    <div class="contenedor_padre">
+            <div class="card">
+                <div class="card__content">
+                    <h1>
+                        CLASE 2 (20-4-23)
+                    </h1>
+                    <button id="A1" class="ejercicios">ACTIVIDAD 1</button>
+                    <button id="A2" class="ejercicios">ACTIVIDAD 2</button>
+                    <button id="A3" class="ejercicios">ACTIVIDAD 3</button>
+                    <button id="A4" class="ejercicios">ACTIVIDAD 4</button>
+                    <button id="A5" class="ejercicios">ACTIVIDAD 5</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    <h1>
+                        CLASE 3 (27-4-23)
+                    </h1>
+                    
+                        <button id="A6" class="ejercicios">ACTIVIDAD 6</button>
+                        <button id="A7" class="ejercicios">ACTIVIDAD 7</button>
+                        <button id="A8" class="ejercicios">ACTIVIDAD 8</button>
+                        <button id="A9" class="ejercicios">ACTIVIDAD 9</button>
+                </div>
+            </div>      
+            <div class="card">
+                <div class="card__content">
+                    <h1>
+                        CLASE 4(04-5-23)
+                    </h1>
+                    
+                        <button id="A10" class="ejercicios">ACTIVIDAD 10</button>
+                        <button id="A11" class="ejercicios">ACTIVIDAD 11</button>
+
+                </div>
+            </div>  
+            <div class="card">
+                <div class="card__content">
+                    <h1>
+                        CLASE 5(04-5-23)
+                    </h1>
+                    
+                        <button id="A12" class="ejercicios">ACTIVIDAD 12</button>
+                        <button id="A13" class="ejercicios">ACTIVIDAD 13</button>
+                        <button id="A14" class="ejercicios">ACTIVIDAD 14</button>
+
+                </div>
+            </div>  
+            <div class="card">
+                <div class="card__content">
+                    <h1>
+                        CLASE 6 (11-5-23)
+                    </h1>
+                    
+                        <button id="A15" class="ejercicios">ACTIVIDAD 15</button>
+                        <button id="A16" class="ejercicios">ACTIVIDAD 16</button>
+                        <button id="A17" class="ejercicios">ACTIVIDAD 17</button>
+                        <button id="A18" class="ejercicios">ACTIVIDAD 18</button>
+                        <button id="A19" class="ejercicios">ACTIVIDAD 19</button>
+                        <button id="A20" class="ejercicios">ACTIVIDAD 20</button>
+                        <button id="A22" class="ejercicios">ACTIVIDAD 21</button>
+                        <button id="A22" class="ejercicios">ACTIVIDAD 22</button>
+
+
+                </div>
+            </div>  
+            
+    </div>
+ <script>
+        function abrirVentana(idBoton) {
+        switch(idBoton) {
+            case "A1":
+            actividad1();
+            break;
+            case "A2":
+            actividad2();
+            break;
+            case "A3":
+            actividad3();
+            break;
+            case "A4":
+            actividad4();
+            break;
+            case "A5":
+            actividad5();
+            break;
+            case "A6":
+            actividad6();
+            break;
+            case "A7":
+            actividad7();
+            break;
+            case "A8":
+            actividad8();
+            break;
+            case "A9":
+            actividad9();
+            break;
+            case "A10":
+            actividad10();
+            break;
+            case "A11":
+            actividad11();
+            break;
+            /*
+            case "A12":
+            actividad12();
+            break;
+            case "A13":
+            actividad13();
+            break;
+            case "A14":
+            actividad14();
+            break;
+            case "A15":
+            actividad15();
+            break;
+            case "A16":
+            actividad16();
+            break;
+            case "A17":
+            actividad17();
+            break;
+            case "A18":
+            actividad18();
+            break;
+            case "A19":
+            actividad19();
+            break;
+            case "A20":
+            actividad20();
+            break;
+            case "A21":
+            actividad21();
+            break;
+            case "A22":
+            actividad22();
+            break;
+*/
+        }
+        }
+
+
+        const botones = document.querySelectorAll('.ejercicios');
+        botones.forEach(boton => {
+        boton.addEventListener('click', function() {
+            abrirVentana(boton.id);
+        });
+        });
+        
+        
+        /* segunda clase */
+
+        function actividad1(){
+            let nombre;
+            let n1, n2, n3, suma;
+
+            nombre=prompt('Ingrese su nombre: ')
+            n1=prompt('Indique nota del primer trimestre: ');
+            n2=parseInt (prompt('Indique nota del segundo trimestre: '));
+            n3=parseInt (prompt('Indique nota del tercer trimestre: '));
+            alert('Hola ' + nombre);
+            suma=parseInt(n1)+parseInt(n2)+parseInt(n3);
+            suma=suma/3;
+            alert('tus nota son: '+ n1 + ' ' + n2 +' ' + n3 + ' ','</br>Tu promedio es: '+ suma);
+
+
+        }
+        function actividad2(){
+            let nombre;
+            let contraseña1,contraseña2;
+
+            nombre=prompt('Ingrese nombe: ')
+            contraseña1=prompt('Ingrese la contraseña: ');
+            contraseña2=prompt('Reingrese la contraseña para verificacion: ')
+
+            if(contraseña1==contraseña2){
+                alert('Tu nombre es: ',nombre);
+                alert('</br>Contraseña correcta');
+            }else{
+                alert('Error, contraseña incorrecta')
+            }
+        }
+        function actividad3(){
+            let suma, producto, resta,division;
+            let n1,n2;
+                alert('Si el primer numero es mayor se sumaran y marcaran la distanca entre ellos, sino el producto y la división del primero respecto al segundo.</br>')
+
+                n1=parseInt(prompt('Indique el primer numero: '));
+                n2=parseInt(prompt('Indique el segundo numero: '));
+                // parseInt(n)
+                if(n1>n2){
+                    resta=parseInt(n1)-parseInt(n2);
+                    alert('La distancia de ',n1,' de ',n2,' es de: ',resta);
+                    suma=parseInt(n1)+parseInt(n2);
+                    alert('</br>La suma de ',n1,' y ',n2,' es de: ',suma);
+                }
+                if(n1<n2){
+                producto=parseInt(n1)*parseInt(n2); 
+                alert('El producto de ',n1,' y ',n2,' Es: ',producto)  ;
+                division=parseInt(n1)/parseInt(n2); 
+                alert('</br>La division de ',n1,' por ',n2,' es de: ',division);
+                }else{
+                    alert('Error')
+                }
+ 
+        }
+        function actividad4(){
+            let n1,n2,n3,prom;
+
+            n1=parseFloat(prompt('Indique su nota del 1 trimestre'));
+            n2=parseFloat(prompt('Indique su nota del 2 trimestre'));
+            n3=parseFloat(prompt('Indique su nota del 3 trimestre'));
+            prom=parseFloat(n1)+parseFloat(n2)+parseFloat(n3);
+            prom=prom/3;
+
+            if(prom>6){
+                alert('Ud. saco la nota de',prom,'por lo tanto esta aprobado');
+                alert('</br>Regular');
+            }else{
+                alert('Ud. saco la nota de',prom,'por lo tanto no cumple con los requisitos');
+                alert('</br>Reprobado');
+            }
+        }
+        function actividad5(){
+            let n1;
+            n1=parseInt(prompt('ingrese numero'));
+            if(n1<10 && n1>0){
+                alert(n1,' Es un numeo de 1 un solo digito');
+            }
+            if(n1<100 && n1>9){
+                alert(n1,' Es un numeo de 2 dos digitos');
+            }if(n1>=100){
+                alert(n1,' Es un numeo de mas de 2 dos digitos');
+            }if(n1==0){
+                alert('Este numero es nulo');
+            }if(n1<0){
+                alert('Error, solo se admiten positivos');
+            }
+        }
+
+        /* tercera clase */
+
+        function actividad6(){
+            let n1,n2,n3;
+            n1=parseFloat(prompt('Indique primer numero.'));
+            n2=parseFloat(prompt('Indique el segundo'));
+            n3=parseFloat(prompt('Indique el tercer numero'));
+        
+            if(n1>n2){
+                if(n1>n3){
+                        alert(n1,' Es el mayor');
+                }
+            }
+            if(n2>n3){
+                if(n2>n3){
+                    alert(n2,' Es el mayor');
+                }
+            }
+            if(n3>n1){
+                if(n3>n2){
+                    alert(n3,' Es el mayor');
+                }
+            }
+        }
+        function actividad7(){
+            let n1;
+            n1=parseInt(prompt('Ingrese un numero entero'));
+            if(n1>0){
+                alert('Es positivo.');
+            }
+            if(n1<0){
+                alert('Es negativo.');
+            }
+            if(n1==0){
+                alert('Es un numero nulo o cero')
+            }
+        }
+        function actividad8(){
+            let n1;
+            n1=parseInt(prompt('ingrese numero'));
+            if(n1<10 && n1>0){
+                alert(n1,' Es un numero de 1 un solo digito');
+            }
+            if(n1<100 && n1>9){
+                alert(n1,' Es un numero de 2 dos digitos');
+            }if(n1>=100){
+                alert(n1,' Es un numero de 3 tres digitos');
+            }if(n1==0){
+                alert('Este numero es nulo');
+            }if(n1<0){
+                alert('solo se admiten positivos');
+            }
+        }
+        function actividad9(){
+            let preguntas, respuestas;
+            let total1,total2,total3;  
+
+                preguntas= parseInt(prompt("indique la cantidad de preguntas"));
+                respuesta= parseInt(prompt("indique la cantidad de respuestas"));
+
+                total1= (preguntas*90/100);
+                total2= (preguntas*75/100);
+                total3= (preguntas*50/100);
+
+
+            if(respuesta>total1){
+                alert("nivel del test: alto");
+            }
+
+            if(respuesta<total1){
+                if(respuesta>=total2){
+                        alert("nivel del test: medio ");
+            }}
+            if(respuesta<total2){
+                if(respuesta>=total3){
+                        alert("nivel del test: regular");
+                }}
+            if(respuesta<total3){
+                        alert("nivel del test: desaprobado");
+                }
+            
+        }
+    
+        /* cuarta clase */
+
+        function actividad10(){
+            let A;
+            A = 11;
+            document.write('<button onclick="location.reload()"> Recargar </button>');
+            document.write('<br>');
+            while(A <= 275){
+                document.write(A);
+                document.write('<br>');
+                A = A + 11;
+            }     
+        }
+        function actividad11(){
+            let B;
+            B = 8;
+            document.write('<button onclick="location.reload()"> Recargar </button>');
+            document.write('<br>');
+            while(B <= 500){
+                document.write(B);
+                document.write('<br>');
+                B = B + 8;
+            }
+        }
+        
+        /* quinta clase 
+        function actividad12()
+        function actividad13()
+        function actividad14()
+    
+    */
+    </script>
+</body>
+</html>
