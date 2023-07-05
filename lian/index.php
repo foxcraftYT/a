@@ -1,13 +1,4 @@
-<?php
-    include "conexion.php";
-    if(isset($_REQUEST["btn"])){
-        $nombre=$_REQUEST["nombre"];
-        $contraseña = $_REQUEST["contraseña"];
-        $correo=$_REQUEST["correo"];
-        $consulta = "INSERT INTO `usuarios`(`nombre`, `correo`, `contraseña`) VALUES ('$nombre','$correo','$contraseña')";
-        $query = $conexion->query($consulta);
-    }
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
