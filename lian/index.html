@@ -6,12 +6,30 @@
     <title>didi pagina</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <center>
-            <h1>hola lian, te hablo desde mi primera pagina web en linea,
-            mejorate pronto corazon mio,sino quien navegara con migo, te amooo </h1>
-
-            <h2> FELIZ ANIVERSARIO NUMERO 6 MI AMOR PRECIOSA</h2>
-        </center>
+    <body class="d-flex justify-content-center"">
+        <div class="content-fluid d-flex flex-column ">
+            <form action="index.php" method="post" class="d-flex flex-column gap-2 ">
+                <section>
+                    <section class="w-100">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control">
+                    </section>
+                <section class="w-100">
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" class="form-control">
+                </section>
+                    <section class="w-100">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" name="contraseña" id="contraseña" class="form-control">
+                    </section>
+                </section>
+                <section>
+                    <a href="../login/index.php">ya tengo cuenta</a>
+                </section>
+                <section >
+                    <input type="submit" class="btn btn-success" value="enviar" name="btn">
+                </section>
+            </form>
+        </div>
     </body>
 </html>
